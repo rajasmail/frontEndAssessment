@@ -1,0 +1,19 @@
+<div style="text-align:center">
+    <h1> Sowlutions Assessment</h1>
+</div>
+<!-- <div>
+    <input #searchBox placeholder="Enter search term" />
+    <button (click)="search(searchBox.value)">Search</button>
+
+    <div *ngFor="let result of searchResults">
+        <h3>{{ result.title }}</h3>
+        <p [innerHTML]="highlightOccurrences(result.content, result.occurrences)"></p>
+        <p>Occurrences: {{ result.occurrences }}</p>
+    </div>
+</div> -->
+<div>
+    <div>
+        <input type="text" [(ngModel)]="search" placeholder="search..." />
+    </div>
+    <p [innerHTML]="highlight()"></p>
+</div>
